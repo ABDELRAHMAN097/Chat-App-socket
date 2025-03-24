@@ -25,12 +25,12 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <li><a href="#Hero" className="hover:text-[#6f55f2] font-semibold">Home</a></li>
-        <li><a href="#About" className="hover:text-[#6f55f2] font-semibold">About</a></li>
-        <li><a href="#Services" className="hover:text-[#6f55f2] font-semibold">Services</a></li>
+        <li><a href="#Hero" className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0">Home</a></li>
+        <li><a href="#About" className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0">About</a></li>
+        <li><a href="#Services" className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0">Services</a></li>
 
-        <li><a href="#Contact" className="hover:text-[#6f55f2] font-semibold">Contact</a></li>
-        <button className="md:block bg-[#6f55f2] hover:bg-[#9785f2] text-white px-4 py-2 rounded-md">
+        <li><a href="#Contact" className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0">Contact</a></li>
+        <button className="md:block bg-[#6f55f2] hover:bg-[#9785f2] text-white px-4 py-2 rounded-md mt-4 md:mt-0">
         Register
         </button>
       </ul>
