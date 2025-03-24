@@ -38,7 +38,7 @@ const Hero = () => {
        />
        <Fade cascade delay={230}>
        <Image 
-      className="w-[200px] md:w-[410px] h-auto absolute  md:left-0 lg:left-40  md:top-[0px] lg:top-[0px] xl:top-[0px] 2xl:top-[0px] z-10"
+      className="w-[200px] md:w-[410px] h-auto absolute left-20 md:left-0 lg:left-40 top-[0px] md:top-[0px] lg:top-[0px] xl:top-[0px] 2xl:top-[0px] z-10"
       src="/assets/img/اhero bg.png"
        alt="gym2" 
        width={300}
