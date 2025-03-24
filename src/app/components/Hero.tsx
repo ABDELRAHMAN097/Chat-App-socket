@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 const Hero = () => {
@@ -9,8 +9,9 @@ const Hero = () => {
 
   >
     <div className="w-full text-secondary flex flex-col items-start justify-center gap-10 md:gap-2 p-5 md:pl:10">
+      <Slide cascade>
       <h1 className="font-semibold text-[30px] md:text-[50px]">
-        Exercise is the key to a <span className="text-[#6f55f2]">Hilthy</span> Lifestyle
+        Exercise is the key to a <span className="text-[#6f55f2]">Healthy</span> Lifestyle
       </h1>
       <p className="text-slate-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque autem excepturi quis impedit cum quae aut. Tempora reiciendis aut, sapiente id sint, ex similique nostrum voluptate dolorem rerum rem!
@@ -25,10 +26,10 @@ const Hero = () => {
         Watch Video
         </button>
       </div>
+      </Slide>
     </div>
     <div className="w-full flex items-center justify-center">
     <div className="w-full flex items-center justify-center relative">
-      
       <Image 
       className="w-[200px] md:w-[350px] h-auto relative left-0 md:left-0 lg:left-9 top-0 md:top-10 lg:top-0 z-20"
       src="/assets/img/gym-02.png"
@@ -45,33 +46,31 @@ const Hero = () => {
        height={300}
        />
        </Fade>
-       
+       <Bounce className="w-[18vw] max-w-[100px] md:w-[100px]  md:max-w-[120px] h-auto absolute 
+             right-[12vw] md:right-[2vw] lg:right-[5vw] xl:right-[5vw] top-[5vh] md:top-[8vh] lg:top-[8vh] xl:top-[8vh] z-30">
         <Image 
-      className="w-[18vw] max-w-[100px] md:w-[100px]  md:max-w-[120px] h-auto absolute 
-             right-[12vw] md:right-[2vw] lg:right-[5vw] xl:right-[5vw] top-[5vh] md:top-[8vh] lg:top-[8vh] xl:top-[8vh] z-30"
       src="/assets/img/hero02.png"
        alt="gym2" 
        width={100}
        height={100}
        />
-       <Fade delay={200} triggerOnce>
+       </Bounce>
+       <Bounce delay={200} triggerOnce className="w-[80px] md:w-[100px] h-auto absolute left-[48px] md:left-[30px] xl:left-[140px] top-[10px] md:top-[35vh] lg:top-[38vh] xl:top-[9vh] z-30">
         <Image 
-      className="w-[80px] md:w-[100px] h-auto absolute left-[48px] md:left-[30px] xl:left-[140px] top-[10px] md:top-[35vh] lg:top-[38vh] xl:top-[9vh] z-30"
       src="/assets/img/hero03.png"
        alt="gym2" 
        width={100}
        height={100}
        />
-       </Fade>
-       <Fade cascade>
+       </Bounce>
+       <Bounce className="w-[60px] md:w-[100px] h-auto absolute left-16 md:left-1 lg:left-32 xl:left-[150px] 2xl:left-[150px] top-[110px] md:top-[53vh] lg:top-[35vh] xl-[10vh] z-30">
         <Image 
-      className="w-[60px] md:w-[100px] h-auto absolute left-16 md:left-1 lg:left-32 xl:left-[150px] 2xl:left-[150px] top-[110px] md:top-[53vh] lg:top-[35vh] xl-[10vh] z-30"
       src="/assets/img/hero01.png"
        alt="gym2" 
        width={80}
        height={80}
        />
-       </Fade>
+       </Bounce>
     </div>
     </div>
     </div>;

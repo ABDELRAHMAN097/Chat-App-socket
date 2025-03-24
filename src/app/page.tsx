@@ -1,7 +1,8 @@
 import { Contact } from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import { About } from "./components/Pricing";
+import { About } from "./components/About";
+import ScrollToTop from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
+      <ScrollToTop />
     </main>
   );
 }
