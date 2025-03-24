@@ -4,11 +4,11 @@ import { Fade } from "react-awesome-reveal";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 const Hero = () => {
-  return <div id="Hero" className="flex flex-col md:flex-row items-center justify-center w-full"
+  return <div id="Hero" className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-2 w-full"
   style={{ minHeight: `calc(100vh - 72px)` }}
 
   >
-    <div className="w-full text-secondary flex flex-col items-start justify-center gap-2 p-5 md:pl:10">
+    <div className="w-full text-secondary flex flex-col items-start justify-center gap-10 md:gap-2 p-5 md:pl:10">
       <h1 className="font-semibold text-[30px] md:text-[50px]">
         Exercise is the key to a <span className="text-[#6f55f2]">Hilthy</span> Lifestyle
       </h1>
